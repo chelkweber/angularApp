@@ -12,11 +12,14 @@ app.factory('fizzBuzzService', function() {
 		setNum: function(entry) {
 			response.num = entry;
 			if (response.num%3 === 0 && response.num%5 === 0) {
-				response.word = " would be FizzBuzz";
+				response.word = " would be JarJarBinks";
+				response.cls = "fizzbuzz";
 			} else if (response.num%5 === 0) {
-				response.word = " would be Buzz";
+				response.word = " would be JarJar";
+				response.cls = "buzz";
 			} else if (response.num%3 === 0) {
-				response.word = " would be Fizz";
+				response.word = " would be Binks";
+				response.cls = "fizz";
 			} else {
 				response.word = " would be " + entry;
 			}
@@ -28,11 +31,11 @@ app.factory('fizzBuzzService', function() {
 			fizzBuzzArray = [];
 			for (i=1; i<=100; i++) {
 				if (i%3 === 0 && i%5 === 0) {
-					num = "FizzBuzz";
+					num = "JarJarBinks";
 				} else if (i%5 === 0) {
-					num = "Buzz";
+					num = "JarJar";
 				} else if (i%3 === 0) {
-					num = "Fizz";
+					num = "Binks";
 				} else {
 					num = i;
 				}

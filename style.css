@@ -1,0 +1,29 @@
+body {
+	margin: 0 auto;
+	padding: 0 auto;
+	font-family: 'Roboto', sans-serif;
+	background-color: #605b56;
+}
+
+#header {
+	width: 90%;
+	background-color: red;
+	text-align: center;
+	margin: 2% 5%;
+	font-size: 20px;
+}
+
+#fizzbuzz {
+	width: 90%;
+	background-color: blue;
+	text-align: center;
+	margin: 2% 5%;
+	padding: 1%;
+	font-size: 18px; 
+}
+
+#fizzbuzz p {
+	text-align: justify;
+}
+
+#fizzbuzz .fizz 

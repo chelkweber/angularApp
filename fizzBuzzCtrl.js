@@ -10,6 +10,7 @@ app.controller('fizzBuzzCtrl', function($scope, fizzBuzzService) {
 	}
 	
 	$scope.numResponse = fizzBuzzService.getResponse();
+	console.log($scope.numResponse);
 	
 	$scope.showFizzBuzz = function() {
 		$scope.fizzBuzzArray = fizzBuzzService.createFizzBuzz();	
