@@ -7,23 +7,52 @@ body {
 
 #header {
 	width: 90%;
-	background-color: red;
+	background-color: #acc18a;
 	text-align: center;
 	margin: 2% 5%;
 	font-size: 20px;
+	color: #f2fbe0; 
+}
+
+#header a {
+	text-decoration: none;
+	color: #f2fbe0;
+	padding: 3%;
+	margin: 5%;
 }
 
 #fizzbuzz {
 	width: 90%;
-	background-color: blue;
+	background-color: #dafeb7;
 	text-align: center;
 	margin: 2% 5%;
 	padding: 1%;
 	font-size: 18px; 
+	color: #605b56;
 }
 
 #fizzbuzz p {
 	text-align: justify;
+}
+
+fbresponse {
+	width: 100%;
+	color: #605b56;
+	text-align: center;
+	margin: 0 auto;
+}
+
+fbresponse .fizz {
+	font-weight: bold;
+}
+
+fbresponse .buzz {
+	text-decoration: underline;
+}
+
+fbresponse .fizzbuzz {
+	font-weight: bold;
+	text-decoration: underline;
 }
 
 .forceDiv{
