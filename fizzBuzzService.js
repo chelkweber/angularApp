@@ -3,49 +3,46 @@ var app = angular.module('angularApp');
 //create factory to return num object
 app.factory('fizzBuzzService', function() {
 	//set empty object for numbers
+	var response = {};
 	var num;
-	var numArray = [];
-	var response;
 	var fizzBuzzArray = [];
 	
-	//complete correct array
-	function createFizzBuzzArr(i) {
-		fizzBuzzArray = [];
+	return {
+		//function to set number value with ;
+		setNum: function(entry) {
+			response.num = entry;
+			if (response.num%3 === 0 && response.num%5 === 0) {
+				response.word = " would be FizzBuzz";
+			} else if (response.num%5 === 0) {
+				response.word = " would be Buzz";
+			} else if (response.num%3 === 0) {
+				response.word = " would be Fizz";
+			} else {
+				response.word = " would be " + entry;
+			}
+		},
+		getResponse: function() {
+			return response;
+		},
+		createFizzBuzz: function(i) {
+			fizzBuzzArray = [];
 			for (i=1; i<=100; i++) {
 				if (i%3 === 0 && i%5 === 0) {
-					i = "FizzBuzz";
+					num = "FizzBuzz";
 				} else if (i%5 === 0) {
-					i = "Buzz";
+					num = "Buzz";
 				} else if (i%3 === 0) {
-					i = "Fizz";
+					num = "Fizz";
 				} else {
-					i;
+					num = i;
 				}
-				numArray.push(i);
+				fizzBuzzArray.push(num);
 			}
-		return fizzBuzzArray;
-	};
-	
-	createFizzBuzzArr();
-	
-	return {
-		//pull words from entry from
-		setGuess: function(guess) {
-			num = guess;
-		},
-		//send words to story
-		getWords: function(num){
-			fizzBuzzArray.forEach(function(i) {
-				if (num == i) {
-					response = i;
-				} else {
-					response = "Wrong"
-				}			  
-							  })
-		return response;
-	}
-};
+			return fizzBuzzArray;
+		}
 	}
 });
+	
+	
 
 		
