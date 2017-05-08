@@ -26,13 +26,18 @@ body {
 	background-color: #dafeb7;
 	text-align: center;
 	margin: 2% 5%;
-	padding: 1%;
 	font-size: 18px; 
 	color: #605b56;
 }
 
 #fizzbuzz p {
 	text-align: justify;
+	padding: 1%;
+}
+
+#fizzbuzz input {
+	border: none;
+	font-size: 18px;
 }
 
 fbresponse {
@@ -40,6 +45,20 @@ fbresponse {
 	color: #605b56;
 	text-align: center;
 	margin: 0 auto;
+}
+
+.fizz-buzz-response {
+	width: 25%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.fizz-buzz-response p {
+	text-align: center;
+}
+
+.display {
+	text-align: center;
 }
 
 fbresponse .fizz {
