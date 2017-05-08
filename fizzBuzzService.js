@@ -15,10 +15,10 @@ app.factory('fizzBuzzService', function() {
 				response.word = " would be JarJarBinks";
 				response.cls = "fizzbuzz";
 			} else if (response.num%5 === 0) {
-				response.word = " would be JarJar";
+				response.word = " would be Binks";
 				response.cls = "buzz";
 			} else if (response.num%3 === 0) {
-				response.word = " would be Binks";
+				response.word = " would be JarJar";
 				response.cls = "fizz";
 			} else {
 				response.word = " would be " + entry;
@@ -33,9 +33,9 @@ app.factory('fizzBuzzService', function() {
 				if (i%3 === 0 && i%5 === 0) {
 					num = "JarJarBinks";
 				} else if (i%5 === 0) {
-					num = "JarJar";
-				} else if (i%3 === 0) {
 					num = "Binks";
+				} else if (i%3 === 0) {
+					num = "JarJar";
 				} else {
 					num = i;
 				}
