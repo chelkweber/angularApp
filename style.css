@@ -1,0 +1,13 @@
+.forceDiv{
+  background-color: lightblue;
+  height: 100px;
+  width: 100%;
+  position: relative;
+}
+.yoda{
+      transition: all linear 1s;
+opacity:1
+}
+.yoda.ng-hide{
+    opacity:0
+}
