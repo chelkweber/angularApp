@@ -2,25 +2,22 @@
     var app = angular.module('angularApp');
     
     app.factory('yodaService', function($http){
-        function yodaInput (yodaSpeak){
-            return yodaSpeak
-        }
         
-        
-        function talkLikeYoda (){
+        function talkLikeYoda (yodaSpeak){
             var promise = $http({
                 method: 'GET',
-                url:'https://yoda.p.mashape.com/yoda?sentence='+ yodaInput
-'
+                url:'https://yoda.p.mashape.com/yoda?sentence='+ yodaSpeak+"'",
+                headers: {
+                    "X-Mashape-Key": 'VPMy88hQzemsh6ryG0sXLzBeN5nip1a9h2MjsnafLj0Cc7rLvB',
+                    "Accept": "text/plain"
+                }
             }).then(function(input) {
-                console.log(input)
-                ;
-                
-                });
+                speech = input;
+                return speech
+            });  
                         return promise;
         }  
         return{
-            yodaInput:yodaInput,
             talkLikeYoda: talkLikeYoda
         }
     })

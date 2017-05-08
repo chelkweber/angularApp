@@ -6,18 +6,20 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	
-	<body ng-app="" ng-controller="">
+	<body ng-app="angularApp">
 
-
+<div id="header"><a href='#!/view1'>FizzBuzz</a> <a href ="#!/view2"> Yoda</a></div>
 		
-		
-<!--	Script tags	-->
+		<ng-view></ng-view>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.min.js"></script>
-		<script src="script/app.js"></script>
-		<script src="controllers.js"></script>
-		<script src="services.js"></script>
-		<script src="directive.js"></script>
+		<script src="app.js"></script>
+        <script src='yodaController.js'></script>
+        <script src="yodaService.js"></script>
+        <script src="config.js"></script>
+		<script src="fizzBuzzCtrl.js"></script>
+		<script src="fizzBuzzService.js"></script>
+		<script src="fizzBuzzDirective.js"></script>
 		
 	</body>
 </html>
