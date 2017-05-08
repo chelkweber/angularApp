@@ -39,4 +39,24 @@ opacity:1
 .yoda.ng-hide{
     opacity:0
 }
+.yodaInput{
+    height:500px;
+    width:80%;
+    background-color: rgba(242,251,224,0.7);
+    margin-left:10%;
 
+}
+.yodaInput form{
+    position:relative;
+    top:80%;
+    left:35%;
+    width:300px;
+}
+.yodaTalks{
+    text-align:center;
+}
+button{
+    border:none;
+    background-color:#71C671;
+    font-size:14px;
+}
