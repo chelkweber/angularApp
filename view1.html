@@ -1,5 +1,8 @@
 <div class="FizzBuzz" ng-controller="fizzBuzzCtrl">
 	<h1>FizzBuzz</h1>
+	
+	<input ng-model="guess.num" type="text" placeholder="Guess">
+	<button type="button" ng-click="compareGuess(guess.num)">Guess</button>
 	<ul ng-repeat="num in numArray track by $index">
 		<li> {{ num }}</li>
 	</ul>
