@@ -7,11 +7,6 @@
     src:url('sfdistantgalaxy.ttf')
 }
 
-@font-face{
-    font-family:gtek;
-    src:url('gtek.ttf')
-    
-}
 body {
 	margin: 0 auto;
 	padding: 0 auto;
@@ -60,7 +55,7 @@ body {
 #fizzbuzz input {
 	border: none;
 	font-size: 18px;
-    font-family:moiser;
+
 }
 
 fbresponse {
@@ -80,6 +75,20 @@ fbresponse {
 .fizz-buzz-response p {
 	text-align: center;
     font-family:moiser;
+}
+
+.display {
+	text-align: center;
+}
+
+.fizz-buzz-response {
+	width: 25%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.fizz-buzz-response p {
+	text-align: center;
 }
 
 .display {
