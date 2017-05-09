@@ -1,3 +1,17 @@
+@font-face{
+    font-family:droid;
+    src:url('blowndroid.ttf')
+}
+@font-face{
+    font-family:sfgalaxy;
+    src:url('sfdistantgalaxy.ttf')
+}
+
+@font-face{
+    font-family:gtek;
+    src:url('gtek.ttf')
+    
+}
 body {
 	margin: 0 auto;
 	padding: 0 auto;
@@ -10,7 +24,7 @@ body {
 	background-color: #acc18a;
 	text-align: center;
 	margin: 2% 5%;
-	font-size: 20px;
+	font-size: 22px;
 	color: #f2fbe0; 
 }
 
@@ -26,13 +40,27 @@ body {
 	background-color: #dafeb7;
 	text-align: center;
 	margin: 2% 5%;
-	padding: 1%;
 	font-size: 18px; 
 	color: #605b56;
+    border-radius:1%;
+    box-shadow: 5px 5px 5px #000000;
+
+    
 }
 
 #fizzbuzz p {
 	text-align: justify;
+	padding: 1%;
+    font-family: 'Space Mono', monospace;
+}
+#fizzbuzz h1{
+    font-family:sfgalaxy;
+}
+
+#fizzbuzz input {
+	border: none;
+	font-size: 18px;
+    font-family:moiser;
 }
 
 fbresponse {
@@ -40,6 +68,22 @@ fbresponse {
 	color: #605b56;
 	text-align: center;
 	margin: 0 auto;
+    font-family:moiser;
+}
+
+.fizz-buzz-response {
+	width: 25%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.fizz-buzz-response p {
+	text-align: center;
+    font-family:moiser;
+}
+
+.display {
+	text-align: center;
 }
 
 fbresponse .fizz {
@@ -55,37 +99,80 @@ fbresponse .fizzbuzz {
 	text-decoration: underline;
 }
 
-.forceDiv{
-  background-color: lightblue;
-  height: 100px;
-  width: 100%;
-  position: relative;
-}
+
 .yoda{
-      transition: all linear 1s;
-opacity:1
+        transition: all linear 1s;
+    opacity:1;
+    display:inline-block;
+    position:static;
+    right:0%;
 }
-.yoda.ng-hide{
-    opacity:0
-}
+
 .yodaInput{
     height:500px;
     width:80%;
     background-color: rgba(242,251,224,0.7);
     margin-left:10%;
+    border-radius:3%;
+    box-shadow: 5px 5px 5px #000000;
+    font-family:sfgalaxy;
+    font-size:24px;
+
 
 }
 .yodaInput form{
     position:relative;
-    top:80%;
+    top:70%;
     left:35%;
     width:300px;
 }
 .yodaTalks{
-    text-align:center;
+    width:70%;
+    height:35%;
+    background-color:#f2fbe0;
+    position:absolute;
+    top:35%;
+    margin-left:13%;
+
 }
 button{
     border:none;
     background-color:#71C671;
     font-size:14px;
+    font-family: 'Space Mono', monospace;
+}
+.homePage{
+    background-image: url(dagobah.png);
+    width:80%;
+    height:500px;
+    margin-left:10%;
+    color:beige;
+    font-weight: bolder;
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:rgba(242,251,224,0.3);
+    text-align:center;
+    border-radius:3%;
+    box-shadow: 5px 5px 5px #000000;
+    font-family:droid;
+
+}
+#header a{
+    font-family:droid;
+}
+.spanny{
+    margin-top:0%;
+}
+.modal.ng-hide{
+   opacity:0;
+}
+.modal{
+    transition: all linear 1s;
+    opacity:1;
+    background-color: rgba(0,0,0,0.4);
+    height:120vh;
+    width:100vw;
+    margin-top:-25%;
+    margin-left:-13%;
 }
